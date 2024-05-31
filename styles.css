@@ -61,8 +61,8 @@ header nav ul li a {
 
 .hero .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-text {
@@ -86,9 +86,9 @@ header nav ul li a {
     border-radius: 10%;
 }
 
-.hero-image {
+/* .hero-image {
     max-width: 40%;
-}
+} */
 
 .image-placeholder {
     /* background: #4b5563;
@@ -153,8 +153,8 @@ header nav ul li a {
 
 .add {
     border-radius: 10px;
-    background: #3b82f6;
-    color: #fff;
+    background: #360202;
+    color: #ca3c04;
     margin: 5% 10%;
     text-align: center;
     
@@ -182,6 +182,7 @@ header nav ul li a {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 40px;
 }
 
 footer {
