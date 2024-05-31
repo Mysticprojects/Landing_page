@@ -7,19 +7,26 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    font-style: italic;
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
-    
+
 }
 
+.logo img {
+    max-width: 50px; /* Set a maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}  
+
 header {
-    background: #1f2937;
+    background: #000000;
     color: #fff;
     padding: 10px 0;
+
 }
 
 header .logo {
@@ -28,6 +35,8 @@ header .logo {
 
 header nav {
     float: right;
+    display: flex;
+    align-items: flex-start;
 }
 
 header nav ul {
@@ -45,7 +54,7 @@ header nav ul li a {
 }
 
 .hero {
-    background: #1f2937;
+    background: #000000;
     color: #fff;
     padding: 60px 0;
 }
@@ -74,6 +83,7 @@ header nav ul li a {
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 10%;
 }
 
 .hero-image {
@@ -81,40 +91,57 @@ header nav ul li a {
 }
 
 .image-placeholder {
-    background: #4b5563;
-    color: #9ca3af;
-    padding: 60px;
+    /* background: #4b5563;
+    /* color: #9ca3af; */
+    /* padding: 60px; */
+    /* text-align: center; */ */
+ 
+
+}
+
+.info-box {
+    background: #ece6e6;
     text-align: center;
-}
-
-.info {
-    background: rgb(249, 250, 251);
-    padding: 8% 0px;
-}
-
-.info h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.info-cards {
+    font-size: 15px;
+    font-weight: bold;
+    color: #75040e;
+    margin: 0px;
+  }
+  
+  .characters {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-}
+  }
+  
+  .box {
+    border: 10px solid #75040e;
+    border-radius: 50%; /* Ensure the box is circular */
+    overflow: hidden; /* Prevent the image from flowing out of the box */
+    width: 150px;
+    height: 150px; 
 
-.card {
-    background: #fff;
-    border: 2px solid #3b82f6;
-    padding: 50px;
-    margin: 10px;
-    text-align: center;
-    flex: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  }
+
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+  }
+  
+  .box-text {
+      height: 150px;
+      width: 150px;
+      margin: 10px;
+      text-align: center;
+      font-size: small;
+      color: rgb(165, 43, 43);
+      font-weight: lighter;
+  }
 
 .quote {
-    background: #e5e7eb;
+    color: rgb(165, 43, 43);
+    background: #1f2937;
     padding: 8% 0;
     text-align: center;
     text-wrap: balance;
@@ -143,6 +170,7 @@ header nav ul li a {
     display: flex;
     justify-content: space-between;
     padding: 5% 0%;
+    flex-wrap: wrap;
 }
 /* .add-text p {
     margin-bottom: 20px;
@@ -161,4 +189,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+
+}
+#footer{
+    display: flex;
+    justify-content: space-around ;
 }
